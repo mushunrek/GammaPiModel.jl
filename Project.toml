@@ -1,0 +1,13 @@
+name = "GammaPiModel"
+uuid = "7b138baf-bd4d-4663-bd2c-8966faaa6e22"
+authors = ["Julian Kern kern@wias-berlin.de", "Bastian Wiederhold bastian.wiederhold@wadham.ox.ac.uk"]
+version = "1.0.0-DEV"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
