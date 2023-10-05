@@ -61,6 +61,7 @@ gamma = [0, 0]
 simulate_fleming_viot(drift=gamma, intensity=10., distribution=Pi)
 ```
 ![Example of a simulation](media/simulation3.svg "Model with constant population size")
+
 The next example simulates a more interesting situation in which most of the jumps are very small and only a few a large. For simplicity, we choose again a product distribution. However, to illustrate the drift, we will choose two different distribution governing the deaths and the births.
 
 ```julia
