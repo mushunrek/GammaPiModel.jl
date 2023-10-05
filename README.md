@@ -1,16 +1,16 @@
 # Simulations for the $(\gamma, \Pi)$-Fleming-Viot model
 > This repository contains the code used to generate simulations of the model presented in our preprint **A $\Lambda$-Fleming-Viot type model with intrinsically varying population size** (available [here](INSERT_URL_HERE)).
 
-We present here the code for simulating the evolution of both the population size process forwards-in-time as well as the lineage counting process backwards-in-time, following the dynamics of the $(\gamma, \Pi)$-Fleming-Viot model. It is out hope that it might be of use to other who a) want to investigate the behaviour of the model or b) are interested in studying its statistics.
+We present here the code for simulating the evolution of both the population size process forwards-in-time as well as the lineage counting process backwards-in-time, following the dynamics of the $(\gamma, \Pi)$-Fleming-Viot model. It is our hope that it might be of use to other who a) want to investigate the behaviour of the model or b) are interested in studying its statistics.
 
 ![Example of a simulation](media/simulation1.svg)
 
 ## The Model
-In Section 2 of the paper, we introduce a new model for the evolution of the gene distribution in a population. In Section 6, we derive a representation of the model as a $\Lambda$-Fleming-Viot in a random environment. As such, it is mostly of interest to simulate the population size process $(N_t)_{t\in [0,T]}$ and the lineage counting process $(n_t)_{t\in [0,T]}$ (backwards in time).
+In Section 2 of the paper, we introduce a new model for the evolution of the gene distribution in a population. In Section 6, we derive a representation of the model as a $\Lambda$-Fleming-Viot in a random environment. As such, it is mostly of interest to simulate the population size process $(N_t)_`{t\in [0,T]}`$ and the lineage counting process $(n_t)_`{t\in [0,T]}`$ (backwards in time).
 
 Fix a characteristic $(\gamma, \Pi)\in\mathfrak{C}$, i.e.
 1. $\gamma = (\gamma_d, \gamma_b)\in \mathbb R^2$,
-2. $\Pi$ a $\sigma$-finite measure on $\mathcal Z := \big( [0,1]\times [0,+\infty) \big)\setminus \{(0,0), (1,0)\}$
+2. $\Pi$ a $\sigma$-finite measure on $\mathcal Z := \big( [0,1]\times [0,+\infty) \big)\setminus \lbrace (0,0), (1,0)\rbrace$
 3. and verifying both $\gamma \geq 0$ and $\gamma_d + \int_{\mathcal Z} z_d d\Pi(z) = \gamma_b + \int_{\mathcal Z} z_b d\Pi(z)$, including the fact that both integrals are finite.
 
 For the purpose here, we will always assume $\Pi$ to be a finite measure. Others may be approximated by cutting off the singularity in $(0,0)$.
