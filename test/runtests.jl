@@ -21,3 +21,10 @@ using Distributions
     @test size(rv) == (2, 1000)
     @test all(rv[1, :] .== rv[2, :])
 end
+
+@testset "point_process.jl" begin
+    ppp = PoissonPointProcess(500000.0, Uniform())
+    timepoints, marks = sample(ppp, 1000.0)
+    @test isapprox( mean(timepoints), 500, atol=1e-1 )
+    @test isapprox( mean(marks), 0.5, atol=1e-4 )
+end
