@@ -22,7 +22,7 @@ using Distributions
     @test all(rv[1, :] .== rv[2, :])
 end
 
-@test_skip @testset "point_process.jl" begin
+@testset "point_process.jl" begin
     ppp = PoissonPointProcess(500000.0, Uniform())
     timepoints, marks = sample(ppp, 1000.0)
     @test isapprox( length(timepoints)/5e8, 1, atol=1e-4 )
