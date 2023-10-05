@@ -1,3 +1,9 @@
+"""
+A Julia module for Poisson Point Processes
+
+# Exported names 
+    PoissonPointProcess, PointRealisation
+"""
 module PPP
 
 using Distributions
