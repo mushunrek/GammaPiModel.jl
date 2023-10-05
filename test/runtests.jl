@@ -2,7 +2,7 @@ using GammaPiModel
 using Test
 using Distributions
 
-@testset "GammaPiModel.jl" begin
+@testset "sampler.jl" begin
     s = Sampler(x -> 1)
     @test s.intensity ≈ 1
 
