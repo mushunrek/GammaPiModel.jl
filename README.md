@@ -6,7 +6,7 @@ We present here the code for simulating the evolution of both the population siz
 ![Example of a simulation](media/simulation1.svg)
 
 ## The Model
-In Section 2 of the paper, we introduce a new model for the evolution of the gene distribution in a population. In Section 6, we derive a representation of the model as a $\Lambda$-Fleming-Viot in a random environment. As such, it is mostly of interest to simulate the population size process $(N_t)_`{t\in [0,T]}`$ and the lineage counting process $(n_t)_`{t\in [0,T]}`$ (backwards in time).
+In Section 2 of the paper, we introduce a new model for the evolution of the gene distribution in a population. In Section 6, we derive a representation of the model as a $\Lambda$-Fleming-Viot in a random environment. As such, it is mostly of interest to simulate the population size process $(N_t)\_{t\in [0,T]}$ and the lineage counting process $(n_t)\_{t\in [0,T]}$ (backwards in time).
 
 Fix a characteristic $(\gamma, \Pi)\in\mathfrak{C}$, i.e.
 1. $\gamma = (\gamma_d, \gamma_b)\in \mathbb R^2$,
