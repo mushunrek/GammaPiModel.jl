@@ -28,7 +28,7 @@ where $k\sim \mathrm{Bin}(n_{(T-t^i)-}, \frac{z_b^i}{N_{t^i} + z_b^i})$ independ
 
 ## Usage Examples
 
-Here, we present some examples to illustrate the basic use of the code.
+Here, we present some examples to illustrate the basic use of the code. For installation instructions, see below.
 
 ```julia
 using GammaPiModel
@@ -78,6 +78,30 @@ distribution = product_distribution( distr_d, distr_b )
 simulate_fleming_viot(intensity=1000., distribution=Pi, T=5., n0=100000)
 ```
 ![Model with small and some large birth events](media/simulation4.svg "Model with many small and some large birth events; a drift downwards compensates.")
+
+## Installation
+The package is not registered. To install it, open the package manager (by pressing `]` and then `Enter`). Then, add the package via the link:
+```
+(@v1.9) pkg> add "https://github.com/mushunrek/GammaPiModel.jl.git"
+     Cloning git-repo `https://github.com/mushunrek/GammaPiModel.jl.git`
+    Updating git-repo `https://github.com/mushunrek/GammaPiModel.jl.git`
+   Resolving package versions...
+    Updating `~/.julia/environments/v1.9/Project.toml`
+  [7b138baf] + GammaPiModel v1.0.0-DEV `https://github.com/mushunrek/GammaPiModel.jl.git#main`
+    Updating `~/.julia/environments/v1.9/Manifest.toml`
+  [7b138baf] + GammaPiModel v1.0.0-DEV `https://github.com/mushunrek/GammaPiModel.jl.git#main`
+Precompiling project...
+  1 dependency successfully precompiled in 10 seconds. 422 already precompiled.
+```
+
+Similarly, to remove the package, open the package manager and use the `remove` command:
+```
+(@v1.9) pkg> remove GammaPiModel
+    Updating `~/.julia/environments/v1.9/Project.toml`
+  [7b138baf] - GammaPiModel v1.0.0-DEV `https://github.com/mushunrek/GammaPiModel.jl.git#main`
+    Updating `~/.julia/environments/v1.9/Manifest.toml`
+  [7b138baf] - GammaPiModel v1.0.0-DEV `https://github.com/mushunrek/GammaPiModel.jl.git#main`
+```
 
 ## Authors
 - Julian Kern ([Contact](mailto:kern-Please_Remove_This_Text-@wias-berlin.de))
