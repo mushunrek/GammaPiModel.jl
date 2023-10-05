@@ -1,5 +1,9 @@
 module GammaPiModel
 
-# Write your package code here.
+include("sampler.jl")
+
+using .Samplers
+
+export Sampler, ΛSampler, ΠSampler, Doubling
 
 end
