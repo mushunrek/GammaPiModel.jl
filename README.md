@@ -1,5 +1,5 @@
 # Simulations for the $(\gamma, \Pi)$-Fleming-Viot model
-> This repository contains the code used to generate simulations of the model presented in our preprint **A $\Lambda$-Fleming-Viot type model with intrinsically varying population size** (available [here](INSERT_URL_HERE)).
+> This repository contains the code used to generate simulations of the model presented in our preprint **A $\Lambda$-Fleming-Viot type model with intrinsically varying population size** (available [here](https://arxiv.org/abs/2311.06100)).
 
 We present here the code for simulating the evolution of both the population size process forwards-in-time as well as the lineage counting process backwards-in-time, following the dynamics of the $(\gamma, \Pi)$-Fleming-Viot model. It is our hope that it might be of use to other who a) want to investigate the behaviour of the model or b) are interested in studying its statistics.
 
